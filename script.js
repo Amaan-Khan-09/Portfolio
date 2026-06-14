@@ -13,7 +13,6 @@ const proofDialogImage = document.getElementById("proof-dialog-image");
 const proofDialogTitle = document.getElementById("proof-dialog-title");
 const proofButtons = document.querySelectorAll("[data-proof]");
 const proofClose = document.querySelector(".proof-close");
-const projectCases = document.querySelectorAll(".project-case");
 const quickFacts = document.querySelectorAll(".quick-facts > div");
 const codingCards = document.querySelectorAll(".stat-card");
 const certFilters = document.querySelectorAll("[data-cert-filter]");
@@ -278,25 +277,6 @@ if (window.matchMedia("(pointer: fine)").matches && !reducedMotion) {
     });
   });
 
-  projectCases.forEach((project) => {
-    project.addEventListener("mousemove", (event) => {
-      const bounds = project.getBoundingClientRect();
-      const pointerX = event.clientX - bounds.left;
-      const pointerY = event.clientY - bounds.top;
-      const tiltY = ((pointerX / bounds.width) - 0.5) * 3.6;
-      const tiltX = ((pointerY / bounds.height) - 0.5) * -3.2;
-
-      project.style.setProperty("--spot-x", `${pointerX}px`);
-      project.style.setProperty("--spot-y", `${pointerY}px`);
-      project.style.setProperty("--tilt-x", `${tiltX}deg`);
-      project.style.setProperty("--tilt-y", `${tiltY}deg`);
-    });
-
-    project.addEventListener("mouseleave", () => {
-      project.style.setProperty("--tilt-x", "0deg");
-      project.style.setProperty("--tilt-y", "0deg");
-    });
-  });
 }
 
 let activeCertificationFilter = "";
