@@ -207,6 +207,7 @@ const showSkill = (tab) => {
     item.setAttribute("tabindex", selected ? "0" : "-1");
   });
 
+  skillDisplay.setAttribute("aria-labelledby", tab.id);
   skillLabel.textContent = tab.dataset.label;
   skillTitle.textContent = tab.dataset.title;
   skillDescription.textContent = tab.dataset.description;
@@ -365,6 +366,7 @@ const showCertifications = (filter) => {
     }
   });
 
+  certificationDisplay.setAttribute("aria-labelledby", filter.id);
   certPanelTitle.textContent = filter.dataset.certTitle;
   certPanelDescription.textContent = filter.dataset.certDescription;
 

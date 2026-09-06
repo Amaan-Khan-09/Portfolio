@@ -4,12 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohammed Amaan Khan | Software Developer</title>
-  <meta name="description" content="Portfolio of Mohammed Amaan Khan, a software developer focused on full-stack development, applied AI, data structures, and practical software systems.">
+  <meta name="description" content="Portfolio of Mohammed Amaan Khan, an AI Engineering Intern and Computer Science undergraduate building full-stack and applied-AI systems, backed by 1000+ solved DSA problems.">
   <meta name="author" content="Mohammed Amaan Khan">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#087f8c">
   <link rel="canonical" href="https://amaan-khan-09.github.io/Portfolio/">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohammed Amaan Khan",
+    "url": "https://amaan-khan-09.github.io/Portfolio/",
+    "image": "https://amaan-khan-09.github.io/Portfolio/assets/amaan-portfolio-preview.png",
+    "jobTitle": "AI Engineering Intern",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Flex Data Pvt. Ltd."
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "CMR Institute of Technology, Hyderabad"
+    },
+    "email": "mailto:mohammeddamaankhan@gmail.com",
+    "sameAs": [
+      "https://github.com/Amaan-Khan-09",
+      "https://www.linkedin.com/in/amaankhan09/",
+      "https://leetcode.com/u/AmaanKhan09/",
+      "https://www.codechef.com/users/amaankhan09",
+      "https://codeforces.com/profile/23r01a0546"
+    ]
+  }
+  </script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-V0SMN8P3LC"></script>
   <script>
@@ -24,7 +51,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Mohammed Amaan Khan Portfolio">
   <meta property="og:title" content="Mohammed Amaan Khan | Software Developer">
-  <meta property="og:description" content="Software development, applied AI, projects, internships, coding profiles, and professional credentials.">
+  <meta property="og:description" content="AI Engineering Intern and CS undergraduate sharing projects, internships, coding profiles, and professional credentials.">
   <meta property="og:url" content="https://amaan-khan-09.github.io/Portfolio/">
   <meta property="og:image" content="https://amaan-khan-09.github.io/Portfolio/assets/amaan-portfolio-preview.png">
   <meta property="og:image:width" content="1200">
@@ -33,7 +60,7 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Mohammed Amaan Khan | Software Developer">
-  <meta name="twitter:description" content="Software development, applied AI, projects, internships, coding profiles, and professional credentials.">
+  <meta name="twitter:description" content="AI Engineering Intern and CS undergraduate sharing projects, internships, coding profiles, and professional credentials.">
   <meta name="twitter:image" content="https://amaan-khan-09.github.io/Portfolio/assets/amaan-portfolio-preview.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -153,49 +180,43 @@
     </div>
     <div class="skill-explorer">
       <div class="skill-menu" role="tablist" aria-label="Technical skill categories">
-        <button class="skill-tab active" type="button" role="tab" aria-selected="true"
+        <button class="skill-tab active" type="button" role="tab" id="skill-tab-core-cs" aria-selected="true" aria-controls="skill-panel"
           data-label="Core Computer Science"
-          data-number="01"
           data-title="Strong fundamentals before frameworks."
           data-description="I study the concepts that explain how software behaves beneath the interface, from processes and memory to data models, networks, and reusable program design."
           data-items="Operating Systems|Database Management Systems|Computer Networks|Object-Oriented Programming">
           Core CS
         </button>
-        <button class="skill-tab" type="button" role="tab" aria-selected="false"
+        <button class="skill-tab" type="button" role="tab" id="skill-tab-languages" aria-selected="false" aria-controls="skill-panel"
           data-label="Programming Languages"
-          data-number="02"
           data-title="Languages for solving and building."
           data-description="I use different languages based on the problem: Python for development and experimentation, C++ for DSA, and JavaScript for interactive web applications."
           data-items="Python|C++|JavaScript|SQL">
           Languages
         </button>
-        <button class="skill-tab" type="button" role="tab" aria-selected="false"
+        <button class="skill-tab" type="button" role="tab" id="skill-tab-development" aria-selected="false" aria-controls="skill-panel"
           data-label="Web Development"
-          data-number="03"
           data-title="From interface to application flow."
           data-description="I build responsive web experiences and understand how frontend behavior, application logic, APIs, and data work together."
           data-items="HTML5|CSS3|JavaScript|Bootstrap|Node.js|Full-Stack Fundamentals">
           Development
         </button>
-        <button class="skill-tab" type="button" role="tab" aria-selected="false"
+        <button class="skill-tab" type="button" role="tab" id="skill-tab-ai-data" aria-selected="false" aria-controls="skill-panel"
           data-label="AI and Data"
-          data-number="04"
           data-title="Intelligent workflows grounded in data."
           data-description="I explore practical AI applications, retrieval-augmented generation, machine learning fundamentals, and structured data workflows."
           data-items="RAG|Large Language Models|AI Applications|Machine Learning|MySQL">
           AI & Data
         </button>
-        <button class="skill-tab" type="button" role="tab" aria-selected="false"
+        <button class="skill-tab" type="button" role="tab" id="skill-tab-dsa" aria-selected="false" aria-controls="skill-panel"
           data-label="Problem Solving"
-          data-number="05"
           data-title="Efficient thinking through DSA."
           data-description="Regular practice across competitive programming platforms has strengthened my ability to identify patterns and design efficient solutions."
           data-items="Arrays and Strings|Linked Lists|Stacks and Queues|Binary Trees|Binary Search Trees|Graphs|Dynamic Programming|Greedy Algorithms">
           DSA
         </button>
-        <button class="skill-tab" type="button" role="tab" aria-selected="false"
+        <button class="skill-tab" type="button" role="tab" id="skill-tab-tools" aria-selected="false" aria-controls="skill-panel"
           data-label="Developer Workflow"
-          data-number="06"
           data-title="Tools that support consistent execution."
           data-description="I use a focused toolset for version control, coding, experimentation, debugging, and documenting project work."
           data-items="Git|GitHub|VS Code|Jupyter Notebook">
@@ -203,7 +224,7 @@
         </button>
       </div>
 
-      <article class="skill-display" role="tabpanel" aria-live="polite">
+      <article class="skill-display" id="skill-panel" role="tabpanel" aria-live="polite" aria-labelledby="skill-tab-core-cs">
         <div class="skill-display-top">
           <p id="skill-label">Core Computer Science</p>
         </div>
@@ -390,14 +411,14 @@
     </div>
     <div class="cert-directory" id="credential-directory">
         <div class="cert-filters" role="tablist" aria-label="Credential categories">
-          <button class="active" type="button" role="tab" aria-selected="true" data-cert-filter="featured" data-cert-title="Selected credentials" data-cert-description="Eight high-signal credentials from recognized technology, consulting, and problem-solving platforms."><span>Curated Selection</span><small>Eight highlights</small></button>
-          <button type="button" role="tab" aria-selected="false" data-cert-filter="ai" data-cert-title="Artificial intelligence" data-cert-description="Foundations and applied learning in AI, intelligent agents, and automation."><span>Artificial Intelligence</span><small>AI &amp; agents</small></button>
-          <button type="button" role="tab" aria-selected="false" data-cert-filter="networking" data-cert-title="Computer networks" data-cert-description="A structured path from networking fundamentals to enterprise security and automation."><span>Computer Networks</span><small>Cisco learning path</small></button>
-          <button type="button" role="tab" aria-selected="false" data-cert-filter="development" data-cert-title="Software development" data-cert-description="Programming and web development learning centered on practical implementation."><span>Development</span><small>Python &amp; web</small></button>
-          <button type="button" role="tab" aria-selected="false" data-cert-filter="problem-solving" data-cert-title="Problem solving" data-cert-description="Credentials supporting algorithmic thinking, data structures, and coding fluency."><span>Problem Solving</span><small>DSA &amp; coding</small></button>
-          <button type="button" role="tab" aria-selected="false" data-cert-filter="professional" data-cert-title="Professional learning" data-cert-description="Broader experiences in communication, participation, and professional readiness."><span>Professional Learning</span><small>Broader capabilities</small></button>
+          <button class="active" type="button" role="tab" id="cert-filter-featured" aria-selected="true" aria-controls="cert-panel" data-cert-filter="featured" data-cert-title="Selected credentials" data-cert-description="Eight high-signal credentials from recognized technology, consulting, and problem-solving platforms."><span>Curated Selection</span><small>Eight highlights</small></button>
+          <button type="button" role="tab" id="cert-filter-ai" aria-selected="false" aria-controls="cert-panel" data-cert-filter="ai" data-cert-title="Artificial intelligence" data-cert-description="Foundations and applied learning in AI, intelligent agents, and automation."><span>Artificial Intelligence</span><small>AI &amp; agents</small></button>
+          <button type="button" role="tab" id="cert-filter-networking" aria-selected="false" aria-controls="cert-panel" data-cert-filter="networking" data-cert-title="Computer networks" data-cert-description="A structured path from networking fundamentals to enterprise security and automation."><span>Computer Networks</span><small>Cisco learning path</small></button>
+          <button type="button" role="tab" id="cert-filter-development" aria-selected="false" aria-controls="cert-panel" data-cert-filter="development" data-cert-title="Software development" data-cert-description="Programming and web development learning centered on practical implementation."><span>Development</span><small>Python &amp; web</small></button>
+          <button type="button" role="tab" id="cert-filter-problem-solving" aria-selected="false" aria-controls="cert-panel" data-cert-filter="problem-solving" data-cert-title="Problem solving" data-cert-description="Credentials supporting algorithmic thinking, data structures, and coding fluency."><span>Problem Solving</span><small>DSA &amp; coding</small></button>
+          <button type="button" role="tab" id="cert-filter-professional" aria-selected="false" aria-controls="cert-panel" data-cert-filter="professional" data-cert-title="Professional learning" data-cert-description="Broader experiences in communication, participation, and professional readiness."><span>Professional Learning</span><small>Broader capabilities</small></button>
         </div>
-        <div class="cert-display">
+        <div class="cert-display" id="cert-panel" role="tabpanel" aria-live="polite" aria-labelledby="cert-filter-featured">
           <div class="cert-display-head">
             <span>Current view</span>
             <h3 id="cert-panel-title">Selected credentials</h3>
