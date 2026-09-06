@@ -26,6 +26,46 @@ const portfolioSections = document.querySelectorAll("main, .section[id]");
 const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const previewMode = new URLSearchParams(window.location.search).has("preview");
+const analyticsEnabled = location.hostname === "amaan-khan-09.github.io"
+  && typeof window.gtag === "function";
+
+const trackPortfolioEvent = (eventName, parameters = {}) => {
+  if (!analyticsEnabled) return;
+  window.gtag("event", eventName, parameters);
+};
+
+document.addEventListener("click", (event) => {
+  const control = event.target.closest("a, button");
+  if (!control) return;
+
+  const href = control.getAttribute("href") || "";
+  const label = control.getAttribute("aria-label")
+    || control.dataset.proofTitle
+    || control.textContent.trim().replace(/\s+/g, " ").slice(0, 100);
+
+  if (control.matches('a[download]')) {
+    trackPortfolioEvent("resume_download", { link_text: label, link_url: href });
+  } else if (href.includes("Mohammed_Amaan_Khan_Resume_Refined.pdf")) {
+    trackPortfolioEvent("resume_view", { link_text: label, link_url: href });
+  } else if (control.matches(".project-source")) {
+    trackPortfolioEvent("project_source_click", { project_name: label, link_url: href });
+  } else if (control.matches(".stat-card")) {
+    trackPortfolioEvent("coding_profile_click", { platform: label, link_url: href });
+  } else if (control.matches(".cert-proof")) {
+    trackPortfolioEvent("certificate_view", {
+      certificate_name: label,
+      link_url: href || control.dataset.proof
+    });
+  } else if (control.matches(".proof-link")) {
+    trackPortfolioEvent("internship_document_view", { document_name: label });
+  } else if (href.startsWith("mailto:")) {
+    trackPortfolioEvent("contact_click", { contact_method: "email" });
+  } else if (href.includes("linkedin.com")) {
+    trackPortfolioEvent("profile_click", { platform: "LinkedIn", link_url: href });
+  } else if (href.includes("github.com/Amaan-Khan-09")) {
+    trackPortfolioEvent("profile_click", { platform: "GitHub", link_url: href });
+  }
+});
 
 document.documentElement.classList.toggle("preview-mode", previewMode);
 

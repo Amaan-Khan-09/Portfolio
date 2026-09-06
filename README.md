@@ -6,13 +6,13 @@ This portfolio showcases my work in software development, artificial intelligenc
 
 ## 🌐 Live Portfolio
 
-https://amaankhan-ai.github.io/Portfolio/
+https://amaan-khan-09.github.io/Portfolio/
 
 ## ⚡ Highlights
 
 - Software Engineering & AI Enthusiast
 - 1000+ DSA Problems Solved
-- 550+ LeetCode Problems
+- 600+ LeetCode Problems
 - AI & Full-Stack Projects
 - Continuous Learner & Builder
 
@@ -24,8 +24,8 @@ https://amaankhan-ai.github.io/Portfolio/
 
 ## 📬 Connect
 
-- GitHub: https://github.com/AmaanKhan-ai
-- LinkedIn: https://www.linkedin.com/in/amaan-khan
+- GitHub: https://github.com/Amaan-Khan-09
+- LinkedIn: https://www.linkedin.com/in/amaankhan09/
 - Gmail: mohammeddamaankhan@gmail.com
 ---
 
